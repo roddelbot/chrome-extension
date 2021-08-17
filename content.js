@@ -1,6 +1,9 @@
 var observer = new MutationObserver( function(mutations) { 
     roddel();
-    results();
+
+    if (document.getElementById('electionTitle').innerHTML == 'Overzicht') {
+        results();
+    }
 })
 
 observer.observe(document.getElementById('participantList'), { attributes: true, childList: true, attributeOldValue: true })
