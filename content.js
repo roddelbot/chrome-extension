@@ -1,16 +1,8 @@
-document.getElementById('consentVote').onclick = function () { 
-    roddel();
-};
-
 roddel();
 
-document.getElementById('RingControlLeft').onclick = function () { 
-    roddel();
-};
+var observer = new MutationObserver( function(mutations) { roddel() } )
 
-document.getElementById('RingControlRight').onclick = function () { 
-    roddel();
-};
+observer.observe(document.getElementById('participantList'), { attributes: true, childList: true, attributeOldValue: true })
 
 function roddel() {
     document.querySelectorAll('.ring__cards .card__title').forEach(function (title) {
