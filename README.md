@@ -1,3 +1,5 @@
+![alt text](https://github.com/roddelbot/chrome-extension/blob/master/preview.jpg?raw=true)
+
 # Roddelpraat Chrome extensie (WIP)
 Deze Chrome extensie maakt het mogelijk om op Roddelpraat te stemmen bij de Gouden Televizier-Ring
 
