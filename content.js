@@ -7,7 +7,6 @@ var observer = new MutationObserver( function(mutations) {
 })
 
 observer.observe(document.getElementById('participantList'), { attributes: true, childList: true, attributeOldValue: true })
-
 function roddel() {
     if (document.getElementById('electionTitle').innerHTML != 'Televizier-Ster Online-Videoserie') {
         return;

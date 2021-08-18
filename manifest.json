@@ -3,8 +3,18 @@
     "description": "Deze extensie maakt het mogelijk om te stemmen op Roddelpraat.",
     "version": "1.0",
     "manifest_version": 3,
-    "content_scripts": [{
-        "js": ["content.js"],
-        "matches": ["https://www.televizier.nl/verkiezing/nominatieronde-gouden-televizier-ring-2021"]
-    }]
+    "content_scripts": [
+        {
+            "js": ["content.js"],
+            "matches": [
+                "https://www.televizier.nl/verkiezing/nominatieronde-gouden-televizier-ring-2021"
+            ]
+        },
+        {
+            "js": ["success.js"],
+            "matches": [
+                "https://www.televizier.nl/verkiezing/nominatieronde-gouden-televizier-ring-2021/bevestig"
+            ]
+        }
+    ]
 }
